@@ -1,0 +1,19 @@
+
+
+.footer{
+  background: radial-gradient(circle at right, #8a8a8abe, #0b0b0b);
+  width: 100%;
+  bottom: 0; /* 하단에 배치 */
+
+
+}
+
+.justify-content-between{
+  width: 120%;
+}
+
+.footer-column{
+  font-size: 120%;
+  margin-bottom: 2px;
+  
+}

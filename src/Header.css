@@ -1,0 +1,13 @@
+.navbar-brand {
+    font-size: 3rem; /* 글자 크기 증가 */
+    color: #fff !important; /* 글자 색상을 하얀색으로 설정 */
+  }
+
+.headerlink{
+   font-size: 1.8rem; /* 글자 크기 증가 */
+    color: #c3bafd !important; /* 글자 색상을 하얀색으로 설정 */
+     }
+
+.headerfix{
+    position: fixed; /* 네비게이션을 화면에 고정합니다. */
+}

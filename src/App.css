@@ -7,32 +7,110 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  height: 8vh;
+  width: 100%;
+  text-align: center; /* 중앙 정렬 */
+  background: radial-gradient(circle at right, #ffffffbe, #181717);
+  font-size: 1.2vw;
+  padding-left: 1%;
+
+  /*position: fixed; /* 네비게이션을 화면에 고정합니다. */
+  color: #ffffff; /* 텍스트 색상 */
+
+}
+.footer {
+  height: 7vh;
+  width: 100%;
+  text-align: center; /* 중앙 정렬 */
+  padding-top:0;
+  position : fiexd;
+
+}
+.app-container {
+
+  display: flex;
+  
+  text-align: center; /* 중앙 정렬 */
+  background: radial-gradient(circle at right, #f9f2f2be, #000000bd);
+  /* flex-direction: row; */
+   /* 좌측의 버튼과 우측의 프레젠테이션 영역을 행으로 배치 */
+  align-items: flex-start; /* 컨텐츠를 상단에 정렬 */
+  justify-content: left; /* 세로 중앙 정렬 */
+ 
+  margin-bottom: 0
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.presentation-container iframe {
+
+  width: 75vw; /* 뷰포트 너비의 80% */
+  height: 80vh; /* 뷰포트 높이의 80% */
+  border-radius: 60px; /* 버튼의 모서리 둥글게 */
+  border: none;
+  margin: 0 auto; /* 중앙 정렬 */
+  border-color: #060706;
+  margin-left: 2%;
+  margin-top: 1%;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-bottom: 0;
+  margin-bottom: 0 !important; /* 강제로 하단 마진 제거 */
+}
+
+
+
+.custom-button:hover {
+  background-color: #5f635f; /* 호버 시 버튼 색상 변경 */
+}
+/* sidebar-column에 대한 스타일 */
+.sidebar-column {
+  margin-top: 0%;
+  background-color: #2d2c32;
+  padding-right: 0;
+  padding-top: 0;
+  top: 0px;
+  font-size: 200%;
+  color: rgb(184, 179, 179);
+  height: 85vh; /* 전체 뷰포트 높이와 동일 */
+  width:  120%;
+  display: flex;
+  
+}
+
+
+.nav-table {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 89vh; /* 최대 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-table-row {
+  padding: 10px;
+  padding-right: 30px;
+  padding-right: 30px;
+  border-bottom: 1px solid #ddd; /* 테두리 추가 */
+  cursor: pointer; /* 마우스 오버 시 포인터 변경 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-table-row:hover {
+  background-color: #888585; /* 호버 시 배경 색상 변경 */
+  color: #333; /* 호버 시 글자 색상 변경 */
+}
+
+.nav-table-row.selected {
+  background-color: #007bff; /* 선택된 항목의 배경 색상 */
+  color: white; /* 선택된 항목의 글자 색상 */
+}
+
+.slide_button{
+
+  margin-bottom: 10px;
+  
+}
+
+.side {
+  margin-left: 20%;
+  margin-top: 7%;
 }
