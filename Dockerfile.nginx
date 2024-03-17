@@ -1,4 +1,4 @@
 # Nginx 설정을 위한 기본 이미지
-FROM nginx:alpine
+FROM 192.168.77.63/test_react/nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 # React 앱의 빌드 결과물을 Nginx에 복사하는 단계는 Docker Compose에서 처리됩니다.
