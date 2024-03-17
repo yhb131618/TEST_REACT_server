@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 
 # 2단계: 운영 환경
-FROM 192.168.77.63/test_react/nginx:alpine2 as production-stage
+FROM 192.168.77.63/test_react/nginx:alpine as production-stage
 COPY --from=build-stage /app/build /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
