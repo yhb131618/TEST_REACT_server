@@ -1,6 +1,8 @@
 /* 기본 스타일 */
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -9,7 +11,7 @@
 }
 
 .title {
-  height: 8vh;
+
   width: 100%;
   text-align: center;
   background: radial-gradient(circle at right, #ffffffbe, #181717);
@@ -19,7 +21,7 @@
 }
 
 .footer {
-  height: 7vh;
+
   width: 100%;
   text-align: center;
   padding-top:0;
@@ -29,8 +31,8 @@
 
 .app-container {
   display: flex;
+  height: 100%;
   text-align: center;
-  background: radial-gradient(circle at right, #f9f2f2be, #000000bd);
   align-items: flex-start;
   justify-content: left;
   margin-bottom: 0;
@@ -42,7 +44,7 @@
   border-radius: 60px;
   border: none;
   margin: 0 auto;
-  margin-left: 2%;
+  margin-left: 3%;
   margin-top: 1%;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
@@ -60,12 +62,15 @@
   background-color: #2d2c32;
   padding-right: 0;
   padding-top: 0;
+  font-size : 0.4vh;
+  text-align: left;
   top: 0px;
-  font-size: 200%;
   color: rgb(184, 179, 179);
-  height: 85vh;
+  height: 89vh;
   width: 120%;
   display: flex;
+  align-items: flex-start;
+  justify-content: left;
 }
 
 .nav-table {
@@ -102,37 +107,19 @@
 }
 
 /* 반응형 미디어 쿼리 */
-@media (max-width: 600px) {
-  .title, .footer, .app-container, .sidebar-column, .nav-table-row {
-    font-size: 4vw;
-  }
 
-  .presentation-container iframe {
-    width: 90vw;
-    height: 50vh;
-  }
 
-  .sidebar-column {
-    width: 100%;
-    font-size: 5vw;
-  }
-
-  .nav-table {
-    max-height: 75vh;
-  }
-}
-
-@media (min-width: 601px) {
+@media (min-width: 600px) {
   .title {
     font-size: 1.2vw;
   }
 
   .presentation-container iframe {
-    width: 75vw;
+    width: 80vw;
     height: 80vh;
   }
 
   .sidebar-column {
-    font-size: 2vw;
+    font-size: 1.2vw;
   }
 }

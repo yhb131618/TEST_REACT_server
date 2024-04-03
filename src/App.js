@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import { Button, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
@@ -17,8 +17,7 @@ function App() {
 
   const presentations = [
     "https://docs.google.com/presentation/d/14mmQ1O414RyY2TDZZoZuzTHC6HdRjx7mAjhPuvHfHtg/?start=false&loop=false&delayms=3000",
-    "https://docs.google.com/presentation/d/2/",
-    "https://docs.google.com/presentation/d/3/",
+
   ];
   const handleNext = () => {
     setActiveSlide((prevActiveSlide) => (prevActiveSlide + 1) % presentations.length);
@@ -29,21 +28,20 @@ function App() {
   };
 
   const projects = [
-    { name: 'Project 1', path: '/Type1' },
-    { name: 'Project 2', path: '/Type2' },
-    { name: 'Project 3', path: '/Type3' },
-    { name: 'Minio', path: '/minio' },
-    { name: 'Harbor', path: '/harbor' },
-    { name: 'Jenkins', path: '/jenkins' },
-    { name: '(Argo)', path: '/argo' },
-    { name: '(Prometeus)', path: '/prometeus' },
-    { name: '(Monitering)', path: '/monitering' },
-    { name: 'Wifi', path: '/wifi' },
+  
+    { name: 'Project_SpringBoot', path: '/Type3' },
+    { name: 'TEST_Deploy_Jenkins', path: '/Type1' },
+    { name: 'TEST_Deploy_K8S', path: '/Type2' },
+    { name: 'Server_Minio', path: 'https://56ca-118-32-146-229.ngrok-free.app/login' },
+    { name: 'Server_Harbor', path: 'https://c291-118-32-146-229.ngrok-free.app/harbor/sign-in?redirect_url=%2Fharbor%2Fprojects' },
+    { name: 'Server_Jenkins', path: 'https://0f63-118-32-146-229.ngrok-free.app/login?from=%2F' },
+
+
     // 나머지 프로젝트 정보 추가
   ];
 
   return (
-    <div>
+    <div className='background'>
       <div className="title">
         <Header />
       </div>
@@ -77,7 +75,7 @@ function App() {
         </Col>
         </Row>
 
-        <Row>
+        {/* <Row>
           <div className="side">
           <Col md={12} className="text-center mt-3">
               <div className="slide_button">
@@ -89,7 +87,7 @@ function App() {
               </div> 
           </Col>    
           </div>     
-        </Row>   
+        </Row>    */}
              
       </div>
       <div className="footer">
